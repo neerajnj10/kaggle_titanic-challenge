@@ -2,8 +2,6 @@
 train<-read.csv("train.csv",na.strings=c('NA',''),stringsAsFactors=F)
 test<-read.csv("test.csv",na.strings=c('NA',''),stringsAsFactors=F)
 
-#train<-read.csv("train.csv",na.strings=c('NA',''),stringsAsFactors=F)
-#test<-read.csv("test.csv",na.strings=c('NA',''),stringsAsFactors=F)
 
 #loading libraries
 library(randomForest)
