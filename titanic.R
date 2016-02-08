@@ -7,8 +7,7 @@ test<-read.csv("test.csv",na.strings=c('NA',''),stringsAsFactors=F)
 library(randomForest)
 library(party)
 library(rpart)
-# library(rattle)
-library(h2o)
+
 #checking the missing data
 check.missing<-function(x) return(paste0(round(sum(is.na(x))/length(x),4)*100,'%'))
 data.frame(sapply(train,check.missing))
